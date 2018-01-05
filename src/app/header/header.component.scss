@@ -1,0 +1,32 @@
+@import "../app.component";
+
+.app-header{
+  width: 100%;
+  min-height: 86px;
+  margin: 0;
+  padding: 0;
+  background-color: $charcoal;
+  font-family: $font-stack;
+
+  /** 2 line text**/
+  .app-header-brand {
+
+    padding: 15px 15px;
+    cursor: pointer;
+
+    .brand-name{
+      font-size: 1.6rem;
+      font-weight: 700;
+      color: $mint;
+      text-transform: uppercase;
+      letter-spacing: 0.1rem;
+    }
+    .brand-title{
+      font-size: 0.8rem;
+      font-weight: 100;
+      color: #fff;
+      text-transform: uppercase;
+      letter-spacing: 0.52rem;
+    }
+  }
+}
