@@ -1,8 +1,10 @@
 @import "../app.component";
 
+$header-height-normal: 86px;
+
 .app-header{
   width: 100%;
-  min-height: 86px;
+  min-height: $header-height-normal;
   margin: 0;
   padding: 0;
   background-color: $charcoal;
@@ -13,6 +15,8 @@
 
     padding: 15px 15px;
     cursor: pointer;
+    position: relative;
+    float: left;
 
     .brand-name{
       font-size: 1.6rem;
@@ -21,12 +25,78 @@
       text-transform: uppercase;
       letter-spacing: 0.1rem;
     }
+
     .brand-title{
       font-size: 0.8rem;
-      font-weight: 100;
+      font-weight: 500;
       color: #fff;
       text-transform: uppercase;
-      letter-spacing: 0.52rem;
+      letter-spacing: 0.46rem;
     }
   }
+
+  .app-header-navs {
+    cursor: pointer;
+    position: relative;
+    width: 500px;
+    text-align: center;
+    vertical-align: middle;
+    padding: 20px 15px;
+    float: left;
+
+    a {
+      color: $mid-grey;
+
+      &:hover {
+        color: #fff;
+      }
+    }
+
+
+  }
+
+  .app-header-contact {
+    position: absolute;
+    font-size: 10px;
+    right: 15px;
+    top: 0;
+    color: #fff;
+    height: $header-height-normal;
+
+    .app-header-details{
+      display: inline-flex;
+      cursor: pointer;
+      padding: 10px 15px;
+
+      .app-header-icon{
+        padding: 15px 10px;
+        color: $mint;
+        i {
+          font-size: 2.4rem;
+        }
+        &:hover {
+          color:#fff;
+        }
+      }
+      .app-header-text {
+        padding: 15px 0;
+        p {
+          margin: 5px 0 0;
+          line-height: 12px;
+          font-size: 12px;
+          color: $mid-grey;
+        }
+      }
+    }
+  }
+}
+
+.app-sub-header{
+  width: 100%;
+  min-height: 1px;
+  margin: 0;
+  padding: 0;
+  background-color: $mint;
+  font-family: $font-stack;
+
 }

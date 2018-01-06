@@ -1,11 +1,51 @@
+@import '~material-design-icons/iconfont/material-icons.css';
+
 body {
   margin: 0;
   padding: 0;
+  text-rendering: optimizeLegibility;
 }
 
 // colours
 $mint: #00BFA5;
 $charcoal: #222;
+$light-grey: #eee;
+$mid-grey: #ccc;
 
 // fonts
 $font-stack: "Helvetica Neue", Helvetica, Arial, sans-serif;
+
+// spacing
+.col-1{
+  width:24.2424%;
+  float:left;
+}
+
+.col-2{
+  width:49.4848%;
+  float:left;
+}
+
+.col-3 {
+  width:74.7474%;
+  float:left;
+}
+
+.col-4 {
+  width:100%;
+  float:left;
+}
+
+// borders
+.border-right {
+  position:relative;
+  &::after {
+    content: "";
+    height: 50%;
+    width: 1px;
+    background-color: #ccc;
+    position: absolute;
+    top: 20px;
+    right: -10px;
+  }
+}
